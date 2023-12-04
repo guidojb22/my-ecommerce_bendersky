@@ -7,7 +7,7 @@ function App() {
   return (
     <div id="app">
       <NavBar />
-      <ItemListContainer />
+      <ItemListContainer saludo="Bienvenido a MeluTienda" />
     </div>
   )
 
