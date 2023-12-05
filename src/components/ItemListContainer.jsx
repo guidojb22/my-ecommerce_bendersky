@@ -1,7 +1,9 @@
+import "./ItemListContainer.css"
+
 const ItemListContainer = ({ saludo }) => {
     return(
         <div>
-            <p>{ saludo }</p>
+            <p id="saludo">{ saludo }</p>
         </div>
     )
 }

@@ -7,10 +7,9 @@ function App() {
   return (
     <div id="app">
       <NavBar />
-      <ItemListContainer saludo="Bienvenido a MeluTienda" />
+      <ItemListContainer saludo={"Bienvenido a MeluTienda"} />
     </div>
   )
-
 }
 
 export default App
