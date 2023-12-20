@@ -8,12 +8,10 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({ saludo }) => {
     const [productos, setProductos] = useState([]);
-    const [cargando, setCargando] = useState(true);
   
     const { categoria } = useParams();
   
     useEffect(() => {
-      setCargando(true)
       obtenerProductos
         .then((respuesta) => {
           if (categoria) {
@@ -24,12 +22,6 @@ const ItemListContainer = ({ saludo }) => {
           } else {
             setProductos(respuesta);
           }
-        })
-        .catch((error) => {
-          console.log(error);
-        })
-        .finally(() => {
-          setCargando(false);
         });
     }, [categoria]);
   

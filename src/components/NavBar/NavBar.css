@@ -10,6 +10,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#linkHome:hover{
+    text-decoration: underline;
+}
+
 #navbar h1 {
     color: white;
     font-size: 30px;
