@@ -1,0 +1,20 @@
+  .item-detalle{
+    display: flex;
+    padding: 20px;
+  }
+  
+.imagen-detalle{
+    width: 40%;
+  }
+  
+.texto-detalle{
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: darkblue;
+  }
+
+.descripcion-detalle{
+    width: 40px;
+}

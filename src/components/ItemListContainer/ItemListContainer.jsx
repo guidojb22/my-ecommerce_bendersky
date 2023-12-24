@@ -22,6 +22,12 @@ const ItemListContainer = ({ saludo }) => {
           } else {
             setProductos(respuesta);
           }
+        })
+        .catch((error) => {
+          console.log(error)
+        })
+        .finally(() => {
+          console.log("Finalizó la promesa.")
         });
     }, [categoria]);
   

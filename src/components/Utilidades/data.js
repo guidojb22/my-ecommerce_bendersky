@@ -4,6 +4,7 @@ const productos = [
         titulo: "Tenedor 1",
         imagen: "../img/tenedor1.jpg",
         categoria: "tenedor",
+        descripcion: "Tenedor plateado",
         oferta: "no",
         precio: 1000
     },
@@ -12,6 +13,7 @@ const productos = [
         titulo: "Tenedor 2",
         imagen: "../img/tenedor2.jpg",
         categoria: "tenedor",
+        descripcion: "Tenedor dorado",
         oferta: "no",
         precio: 1000
     },
@@ -20,6 +22,7 @@ const productos = [
         titulo: "Tenedor 3",
         imagen: "../img/tenedor3.png",
         categoria: "tenedor",
+        descripcion: "Tenedor madera",
         oferta: "si",
         precio: 950
     },
@@ -28,6 +31,7 @@ const productos = [
         titulo: "Tenedor 4",
         imagen: "../img/tenedor4.jpg",
         categoria: "tenedor",
+        descripcion: "Tenedor negro",
         oferta: "no",
         precio: 1000
     },
@@ -36,6 +40,7 @@ const productos = [
         titulo: "Cuchillo 1",
         imagen: "../img/cuchillo1.jpg",
         categoria: "cuchillo",
+        descripcion: "Cuchillo plateado",
         oferta: "no",
         precio: 900
     },
@@ -44,6 +49,7 @@ const productos = [
         titulo: "Cuchillo 2",
         imagen: "../img/cuchillo2.png",
         categoria: "cuchillo",
+        descripcion: "Cuchillo dorado",
         oferta: "no",
         precio: 900
     },
@@ -52,6 +58,7 @@ const productos = [
         titulo: "Cuchillo 3",
         imagen: "../img/cuchillo3.jpg",
         categoria: "cuchillo",
+        descripcion: "Cuchillo madera",
         oferta: "si",
         precio: 850
     },
@@ -60,6 +67,7 @@ const productos = [
         titulo: "Cuchillo 4",
         imagen: "../img/cuchillo4.jpeg",
         categoria: "cuchillo",
+        descripcion: "Cuchillo negro",
         oferta: "no",
         precio: 900
     },
@@ -68,6 +76,7 @@ const productos = [
         titulo: "Cuchara 1",
         imagen: "../img/cuchara1.jpg",
         categoria: "cuchara",
+        descripcion: "Cuchara plateada",
         oferta: "no",
         precio: 800
     },
@@ -76,6 +85,7 @@ const productos = [
         titulo: "Cuchara 2",
         imagen: "../img/cuchara2.png",
         categoria: "cuchara",
+        descripcion: "Cuchara dorada",
         oferta: "no",
         precio: 800
     },
@@ -84,6 +94,7 @@ const productos = [
         titulo: "Cuchara 3",
         imagen: "../img/cuchara3.jpg",
         categoria: "cuchara",
+        descripcion: "Cuchara madera",
         oferta: "si",
         precio: 750
     },
@@ -92,6 +103,7 @@ const productos = [
         titulo: "Cuchara 4",
         imagen: "../img/cuchara4.webp",
         categoria: "cuchara",
+        descripcion: "Cuchara negra",
         oferta: "no",
         precio: 800
     },
@@ -100,6 +112,7 @@ const productos = [
         titulo: "Cucharita 1",
         imagen: "../img/cucharita1.png",
         categoria: "cucharita",
+        descripcion: "Cucharita plateada",
         oferta: "no",
         precio: 500
     },
@@ -108,6 +121,7 @@ const productos = [
         titulo: "Cucharita 2",
         imagen: "../img/cucharita2.jpg",
         categoria: "cucharita",
+        descripcion: "Cucharita dorada",
         oferta: "no",
         precio: 500
     },
@@ -116,6 +130,7 @@ const productos = [
         titulo: "Cucharita 3",
         imagen: "../img/cucharita3.png",
         categoria: "cucharita",
+        descripcion: "Cucharita madera",
         oferta: "si",
         precio: 450
     },
@@ -124,6 +139,7 @@ const productos = [
         titulo: "Cucharita 4",
         imagen: "../img/cucharita4.jpg",
         categoria: "cucharita",
+        descripcion: "Cucharita negra",
         oferta: "no",
         precio: 500
     }
