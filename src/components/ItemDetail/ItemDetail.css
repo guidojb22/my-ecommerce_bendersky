@@ -1,15 +1,18 @@
-  .item-detalle{
+.item-detalle{
     display: flex;
     padding: 20px;
   }
   
 .imagen-detalle{
     width: 40%;
+    border: solid 5px darkblue;
+    border-radius: 10px;
   }
   
 .texto-detalle{
     width: 40%;
     padding: 10px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     color: darkblue;
