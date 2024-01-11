@@ -1,0 +1,39 @@
+.item-count{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+.controles button{
+    width: 40px;
+    height: 35px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+  }
+  
+button:hover{
+    cursor: pointer;
+  }
+  
+.agregar{
+    padding: 10px 0;
+    background-color: darkblue;
+    color: white;
+  }
+
+.terminarCompra{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    background-color: darkblue;
+    color: white;
+  }

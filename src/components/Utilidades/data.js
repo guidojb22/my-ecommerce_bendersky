@@ -6,7 +6,8 @@ const productos = [
         categoria: "tenedor",
         descripcion: "Tenedor plateado",
         oferta: "no",
-        precio: 1000
+        precio: 1000,
+        stock: 10
     },
     {
         id: "02",
@@ -15,7 +16,8 @@ const productos = [
         categoria: "tenedor",
         descripcion: "Tenedor dorado",
         oferta: "no",
-        precio: 1000
+        precio: 1000,
+        stock: 10
     },
     {
         id: "03",
@@ -24,7 +26,8 @@ const productos = [
         categoria: "tenedor",
         descripcion: "Tenedor madera",
         oferta: "si",
-        precio: 950
+        precio: 950,
+        stock: 10
     },
     {
         id: "04",
@@ -33,7 +36,8 @@ const productos = [
         categoria: "tenedor",
         descripcion: "Tenedor negro",
         oferta: "no",
-        precio: 1000
+        precio: 1000,
+        stock: 10
     },
     {
         id: "05",
@@ -42,7 +46,8 @@ const productos = [
         categoria: "cuchillo",
         descripcion: "Cuchillo plateado",
         oferta: "no",
-        precio: 900
+        precio: 900,
+        stock: 10
     },
     {
         id: "06",
@@ -51,7 +56,8 @@ const productos = [
         categoria: "cuchillo",
         descripcion: "Cuchillo dorado",
         oferta: "no",
-        precio: 900
+        precio: 900,
+        stock: 10
     },
     {
         id: "07",
@@ -60,7 +66,8 @@ const productos = [
         categoria: "cuchillo",
         descripcion: "Cuchillo madera",
         oferta: "si",
-        precio: 850
+        precio: 850,
+        stock: 10
     },
     {
         id: "08",
@@ -69,7 +76,8 @@ const productos = [
         categoria: "cuchillo",
         descripcion: "Cuchillo negro",
         oferta: "no",
-        precio: 900
+        precio: 900,
+        stock: 10
     },
     {
         id: "09",
@@ -78,7 +86,8 @@ const productos = [
         categoria: "cuchara",
         descripcion: "Cuchara plateada",
         oferta: "no",
-        precio: 800
+        precio: 800,
+        stock: 10
     },
     {
         id: "10",
@@ -87,7 +96,8 @@ const productos = [
         categoria: "cuchara",
         descripcion: "Cuchara dorada",
         oferta: "no",
-        precio: 800
+        precio: 800,
+        stock: 10
     },
     {
         id: "11",
@@ -96,7 +106,8 @@ const productos = [
         categoria: "cuchara",
         descripcion: "Cuchara madera",
         oferta: "si",
-        precio: 750
+        precio: 750,
+        stock: 10
     },
     {
         id: "12",
@@ -105,7 +116,8 @@ const productos = [
         categoria: "cuchara",
         descripcion: "Cuchara negra",
         oferta: "no",
-        precio: 800
+        precio: 800,
+        stock: 10
     },
     {
         id: "13",
@@ -114,7 +126,8 @@ const productos = [
         categoria: "cucharita",
         descripcion: "Cucharita plateada",
         oferta: "no",
-        precio: 500
+        precio: 500,
+        stock: 10
     },
     {
         id: "14",
@@ -123,7 +136,8 @@ const productos = [
         categoria: "cucharita",
         descripcion: "Cucharita dorada",
         oferta: "no",
-        precio: 500
+        precio: 500,
+        stock: 10
     },
     {
         id: "15",
@@ -132,7 +146,8 @@ const productos = [
         categoria: "cucharita",
         descripcion: "Cucharita madera",
         oferta: "si",
-        precio: 450
+        precio: 450,
+        stock: 10
     },
     {
         id: "16",
@@ -141,7 +156,8 @@ const productos = [
         categoria: "cucharita",
         descripcion: "Cucharita negra",
         oferta: "no",
-        precio: 500
+        precio: 500,
+        stock: 10
     }
 ]
 
