@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom"; 
@@ -5,13 +7,15 @@ import "./ItemDetail.css"
 
 const ItemDetail = ({ producto }) => {
 
+  const [toggle, setToggle] = useState(false)
+  const { aniadirProducto } = useContext(CartContext)
+
     const agregarAlCarrito = (contador) => {
-      const productosEnCarrito = { contador, nombre: producto.titulo }
-      console.log(productosEnCarrito)
+      const productoNuevo = {...producto, cantidad: contador}
+      aniadirProducto(productoNuevo)
       setToggle(true)
     }
 
-    const [toggle, setToggle] = useState(false)
 
     return (
       <div className="item-detalle">

@@ -23,7 +23,7 @@ const NavBar = () => {
                         <Link to="/categoria/cucharita">Cucharitas</Link>
                     </li>
                 </ul>
-                <CartWidget />
+                <Link to="/carrito"><CartWidget /></Link>
             </p>
         </div>
     )

@@ -33,6 +33,8 @@ button:hover{
     width: 150px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    text-align: center;
     padding: 10px 0;
     background-color: darkblue;
     color: white;

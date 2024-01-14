@@ -3,13 +3,14 @@ import NavBar from './components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Carrito from './components/Carrito/Carrito';
+import { CartProvider } from './context/CartContext';
 
 import './App.css'
 
 function App() {
   return (
     <BrowserRouter>
-      <div id="app">
+      <CartProvider>
         <NavBar />
 
         <Routes>
@@ -19,7 +20,7 @@ function App() {
           <Route path="/carrito" element={<Carrito />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </div>
+      </CartProvider>
     </BrowserRouter>
   )
 }
