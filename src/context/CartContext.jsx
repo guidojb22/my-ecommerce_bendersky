@@ -30,17 +30,24 @@ const CartProvider = ({ children }) => {
         return carrito.reduce((total, producto)=> total + producto.cantidad, 0)
     }
 
+    const totalPrecio = () => {
+      return carrito.reduce(
+        (total, producto) => total + producto.cantidad * producto.precio,
+        0
+      );
+    };
+
     const borrarCarrito = () =>{
         setCarrito([])
       }
     
-      const borrarProducto = (idProducto) =>{
+    const borrarProducto = (idProducto) =>{
         const productosFiltrados = carrito.filter((producto) => producto.id !== idProducto)
         setCarrito(productosFiltrados)
       }
     
       return(
-        <CartContext.Provider value={{carrito, aniadirProducto, totalCantidad, borrarCarrito, borrarProducto}}>
+        <CartContext.Provider value={{carrito, aniadirProducto, totalCantidad, borrarCarrito, borrarProducto, totalPrecio}}>
           {children}
         </CartContext.Provider>
       )

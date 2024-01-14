@@ -26,7 +26,10 @@ const ItemDetail = ({ producto }) => {
           <p className="precio-detalle">${producto.precio} </p>
           {
             toggle ? (
-              <Link to="/carrito" className="terminarCompra">Terminar compra</Link>
+              <div>
+                <Link to="/carrito" className="terminarCompra">Terminar compra</Link>,
+                <Link to="/" className="terminarCompra">Seguí mirando</Link>
+              </div>
             ) : 
             (<ItemCount stock={producto.stock} agregarAlCarrito={agregarAlCarrito}/>)
           }
