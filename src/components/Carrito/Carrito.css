@@ -91,3 +91,16 @@
     align-items: center;
     font-size: 20px;
 }
+
+.avanzarCompra {
+    width: 25%;
+    text-decoration: none;
+    margin: 6px 0;
+    color: white;
+    background-color: darkblue;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
