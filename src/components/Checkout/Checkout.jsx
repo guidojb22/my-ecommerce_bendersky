@@ -1,10 +1,12 @@
-import React, { useContext, useState } from 'react'
-import Form from './Form'
-import { CartContext } from '../../context/CartContext'
-import { addDoc, collection } from "firebase/firestore"
-import db from "../../db/db"
+import React, { useContext, useState } from 'react';
 
-import Swal from 'sweetalert2'
+import Form from './Form';
+import { CartContext } from '../../context/CartContext';
+import { addDoc, collection } from "firebase/firestore";
+import db from "../../db/db";
+import Swal from 'sweetalert2';
+
+import "./Checkout.css"
 
 const Checkout = () => {
 const [datosForm, setDatosForm] = useState({
