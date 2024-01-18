@@ -1,8 +1,21 @@
-# React + Vite
+# Melutienda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un ecommerce de productos de bazar. Permite filtrar por categoria y se pueden ver sus detalles. Posee un carrito de compras y un checkout para que el usuario/cliente nos brinde sus datos. Esta información es guardada en una base de datos.
 
-Currently, two official plugins are available:
+## Instalación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instalar mi proyecto con npm
+
+```bash
+  npm install
+  npm run dev
+```
+
+## Dependencias
+
+```bash
+  firebase
+  react-router-dom
+  react-spinners
+  sweetalert2
+```
