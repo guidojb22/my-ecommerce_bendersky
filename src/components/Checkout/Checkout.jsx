@@ -4,11 +4,14 @@ import { CartContext } from '../../context/CartContext'
 import { addDoc, collection } from "firebase/firestore"
 import db from "../../db/db"
 
+import Swal from 'sweetalert2'
+
 const Checkout = () => {
 const [datosForm, setDatosForm] = useState({
   nombre: "",
   telefono: "",
   email: "",
+  emailRepetido: ""
 })
 
 const [idOrden, setIdOrden] = useState(null)
@@ -21,12 +24,21 @@ const guardarDatosInput = (event) => {
 
 const enviarOrden = (event) => {
   event.preventDefault()
-  const orden = {
-    comprador: {...datosForm},
-    productos: [...carrito],
-    total: totalPrecio()
+  if(datosForm.email === datosForm.emailRepetido){
+    const orden = {
+      comprador: {...datosForm},
+      productos: [...carrito],
+      fecha: new Date(),
+      total: totalPrecio()
+    }
+    subirOrden(orden)
+  }else{
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Debe repetir el e-mail correctamente.",
+    });
   }
-  subirOrden(orden)
 }
 
 const subirOrden = (orden) => {

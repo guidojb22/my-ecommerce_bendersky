@@ -6,6 +6,8 @@ import db from "../../db/db"
 
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({})
+  const [productoExiste, setProductoExiste] = useState(false)
+
   const { id } = useParams()
 
   useEffect(()=>{
@@ -13,13 +15,22 @@ const ItemDetailContainer = () => {
     getDoc(productoRef)
       .then ((respuesta)=> {
         const productoDb = { id: respuesta.id, ...respuesta.data() }
+        if(!respuesta.exists()){
+          setProductoExiste(true)
+        }
         setProducto(productoDb)
       })
   }, [id])
 
   return (
     <div>
-      <ItemDetail producto={producto} />
+      {
+        productoExiste ? (
+          <div>Producto no existe</div>
+        ) : (
+          <ItemDetail producto={producto} />
+        )
+      }
     </div>
   )
 }
