@@ -55,7 +55,7 @@ const subirOrden = (orden) => {
     <div>
       {
         idOrden ? (
-          <div>
+          <div className='ordenGenerada'>
             <h2>Orden generada correctamente</h2>
             <p>Número de orden: {idOrden} </p>
           </div>

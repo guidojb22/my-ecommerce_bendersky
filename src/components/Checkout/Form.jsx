@@ -1,9 +1,10 @@
 const Form = ({ datosForm, guardarDatosInput, enviarOrden }) => {
   return (
     <div>
-      <form onSubmit={enviarOrden}>
+      <h3 className="tituloForm">Complete sus datos</h3>
+      <form onSubmit={enviarOrden} className="form" >
         <label htmlFor="nombre">Nombre</label>
-        <input
+        <input className="input"
           type="text"
           id="nombre"
           name="nombre"
@@ -13,7 +14,7 @@ const Form = ({ datosForm, guardarDatosInput, enviarOrden }) => {
         />
 
         <label htmlFor="telefono">Telefono</label>
-        <input
+        <input className="input"
           type="text"
           id="telefono"
           name="telefono"
@@ -23,7 +24,7 @@ const Form = ({ datosForm, guardarDatosInput, enviarOrden }) => {
         />
 
         <label htmlFor="email">E-mail</label>
-        <input
+        <input className="input"
           type="email"
           id="email"
           name="email"
@@ -33,7 +34,7 @@ const Form = ({ datosForm, guardarDatosInput, enviarOrden }) => {
         />
 
         <label htmlFor="emailRepetido">Repetir E-mail</label>
-        <input
+        <input className="input"
           type="email"
           id="emailRepetido"
           name="emailRepetido"
@@ -42,7 +43,7 @@ const Form = ({ datosForm, guardarDatosInput, enviarOrden }) => {
           required
         />
 
-        <button type="submit">Enviar orden</button>
+        <button type="submit" className="boton">Enviar orden</button>
       </form>
     </div>
   );
