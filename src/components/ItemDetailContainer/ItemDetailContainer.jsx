@@ -5,6 +5,8 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import db from "../../db/db"
 
+import "./ItemDetailContainer.css"
+
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({})
   const [productoExiste, setProductoExiste] = useState(false)
@@ -27,7 +29,9 @@ const ItemDetailContainer = () => {
     <div>
       {
         productoExiste ? (
-          <div>Producto no existe</div>
+          <div>
+            <h2 className="productoInexistente">El producto no existe</h2>
+          </div>
         ) : (
           <ItemDetail producto={producto} />
         )
